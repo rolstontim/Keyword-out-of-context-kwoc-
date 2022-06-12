@@ -1,0 +1,58 @@
+//Tim Rolston #V00920780
+
+#include <stdio.h>
+#include <stdlib.h>
+#define MAX_LINES 100
+#define MAX_CHAR 80
+#define MAX_EXCEPT 100
+#define MAX_KEYWORDS 500
+
+
+int line_number = 0;
+char keywords[500];
+char input_line[100];
+char exception_words[100];
+
+
+
+main(){
+
+	FILE *fp;
+
+	
+	//Reads exception file
+	exp = fopen("english.txt", "r");
+	for(int i = 0; i < MAX_EXCEPT; i++){
+
+		fgets(exception_words, MAX_EXCEPT, exp)
+	}
+	fclose(exp);
+
+
+	//Reads input file
+	printf("Enter file name\n");
+	gets(file);
+	
+	fr = fopen(file, "r");
+
+		if(fr == NULL){
+
+			printf("Error opening the file\n");
+			exit(EXIT_FALIURE);		
+			
+		}
+
+	for(int i_1 = 0; i_1 < MAX_LINES; i_1++){
+
+		fgets(input_lines, MAX_LINES, file);
+		line_number++;
+ 
+	} 
+
+	fclose(fr;
+
+
+	
+
+
+}
